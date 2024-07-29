@@ -33,4 +33,5 @@ jobs:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
       run: |
         npm install -g firebase-tools
+        firebase use --add <kyrotics>
         firebase deploy --only hosting
